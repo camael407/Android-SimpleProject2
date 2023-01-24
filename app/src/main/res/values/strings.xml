@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Project2</string>
+
+    <string-array name="blood_array">
+        <item>A</item>
+        <item>B</item>
+        <item>O</item>
+        <item>AB</item>
+    </string-array>
+</resources>

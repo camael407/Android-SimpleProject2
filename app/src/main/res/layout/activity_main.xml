@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rd1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <TableLayout
+        android:id="@+id/tb1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1,2,3,4"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp"
+        >
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="키 :" />
+
+            <EditText
+                android:id="@+id/edt1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_span="3"
+                android:ems="10"
+                android:inputType="number|numberDecimal"
+                android:maxLength="6" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(cm)" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="체    중:" />
+
+            <EditText
+                android:id="@+id/edt2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_span="3"
+                android:ems="10"
+                android:inputType="number|numberDecimal"
+                android:maxLength="6" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(kg)" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="성    별:" />
+
+            <RadioGroup
+                android:id="@+id/rGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_span="2"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rdo1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:checked="true"
+                    android:text="여자" />
+
+                <RadioButton
+                    android:id="@+id/rdo2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="남자" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_span="2"
+                android:layout_weight="1" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="혈액형:" />
+
+            <Spinner
+                android:id="@+id/spin1"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_span="3" />
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="습    관:" />
+
+            <CheckBox
+                android:id="@+id/chk1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="음주" />
+
+            <CheckBox
+                android:id="@+id/chk2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="흡연" />
+
+            <CheckBox
+                android:id="@+id/chk3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_span="2"
+                android:text="운동" />
+
+        </TableRow>
+    </TableLayout>
+<Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/btn1"
+    android:text="몸 상태 측정"
+    android:layout_below="@+id/tb1" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="1. ?형 ??입니다."
+        android:id="@+id/tv1"
+        android:layout_below="@+id/btn1"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="2. 신체질량지수는 ???입니다."
+        android:id="@+id/tv2"
+        android:layout_below="@+id/tv1"
+        />
+
+    <Gallery
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/gal"
+        android:layout_below="@+id/tv2"
+        />
+
+</RelativeLayout>
